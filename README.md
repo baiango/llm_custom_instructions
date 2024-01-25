@@ -47,6 +47,46 @@ What's the moon?
 
 ### Emojis 🌙✨🔍
 ```
+## E.g. TE2
+```
+How to make your text clear?
+```
+```
+### Detailed Explanation: How to Make Your Text Clear
+
+1. **Know Your Audience** 👥: Understand who you are writing for to tailor your language and content.
+2. **Define Your Purpose** 🎯: Be clear about what you want to achieve with your text.
+3. **Use Simple Language** 💬: Avoid jargon and complex vocabulary unless necessary.
+4. **Be Concise** 📏: Use fewer words to convey your message.
+5. **Use Active Voice** 🗣️: Prefer active voice over passive for clarity and engagement.
+6. **Structure Your Text** 🏗️: Organize your content with headings, paragraphs, and lists.
+7. **Use Examples and Analogies** 🌟: Illustrate abstract concepts with concrete examples.
+8. **Choose the Right Tone** 🎶: Match your tone to your audience and purpose.
+9. **Avoid Ambiguity** ❌: Be specific to prevent misunderstandings.
+10. **Use Transition Words** 🔗: Help readers follow your ideas smoothly.
+11. **Revise and Edit** ✍️: Review your text for clarity, grammar, and typos.
+12. **Get Feedback** 👂: Ask others to read your text and provide suggestions.
+13. **Read Aloud** 📢: Hearing your text can highlight issues you might miss when reading silently.
+14. **Use Visual Aids** 📊: Incorporate charts, graphs, or images to complement your text.
+15. **Consistency is Key** 🔑: Be consistent in style, tense, and formatting.
+16. **Focus on the Reader’s Benefits** 🎁: Emphasize how the reader can benefit from your text.
+17. **Break Down Complex Ideas** 🧩: Divide hard concepts into simpler, understandable parts.
+18. **Use Bullet Points for Lists** 📋: They are easier to scan and understand.
+19. **Avoid Repetition** 🔁: Repeating the same information can be redundant and boring.
+20. **Be Authentic** 💓: Write in a genuine and honest manner.
+
+### Underexplored Topic
+
+- **The Impact of Typography on Clarity** 📝: Exploring how font choice, size, and layout can affect the readability and understanding of text.
+
+### Follow-Up Questions
+
+1. How does the choice of font impact the readability of text?
+2. Can the layout of a paragraph affect the reader's comprehension?
+3. In what ways can visual aids enhance the clarity of a text?
+
+### 🤔📖💡
+```
 
 # Essence Writer
 ### ChatGPT 4 or a **similar model** is suggested for superior English vocabulary usage and adherence to instructions.
@@ -141,4 +181,72 @@ Your text contains several instances of ambiguity, primarily stemming from exces
 4. **Narrative Ambiguity**: The overarching point you're making is somewhat obscured. While it seems you're advocating for clearer writing by avoiding filler words, the message is delivered in a way that ironically exemplifies the issue you're highlighting.
 
 To improve clarity, it would be helpful to rephrase your statement more concisely, directly addressing the main point without the use of filler words. Could you provide more specific details or restate your message with more clarity?
+```
+## E.g. AD2
+```
+"""
+# Guidelines for programming best practices in Python syntax. These guidelines are allowed unless strictly stated.
+
+preferred:
+use dictionary mapping or match-case for 4 to 20 conditions to replace if-elif
+look-up tables
+nesting functions
+continue keyword in all loops when needed
+comment on illogical code lines
+strictly use "tmp" (temp) and "ret" (return_) as abbreviations variable naming ('tmp' vars declaration disposed within 3 lines)
+maximum of 3 indention levels at base level of the source file
+type hints naming convention in variable names
+
+avoid:
+modifying global variables in any functions
+negative wording variable names, e.g., "not" word in the name
+double negation, e.g., a negative wording variable put in a negative condition
+complex to read if statements, e.g., more than 2 conditions in a line
+strictly no vary approach, e.g., writing the bound check in different ways
+chaining methods
+
+suggest:
+strictly split high abstraction level functions over 30 lines
+all functions do what their names said
+strictly avoid more than 2 returns
+
+simplify loops with these functions to improve readability if you can:
+sum() # Totals iterable
+filter() # Selects items
+reduce() # Combines items
+product() # Multiplies iterable
+map() # Changes items
+zip() # Pairs elements
+enumerate() # Counts items
+transpose() # Flips matrix
+"""
+```
+```
+The provided text contains guidelines for programming best practices in Python syntax. However, several ambiguities and unclear statements are present. I'll list them out and ask for clarifications where necessary:
+
+1. **Ambiguity in "These guidelines are allowed unless strictly stated":** It's unclear what is meant by "allowed." Does this mean that these practices are recommended, or are they permissible but not necessarily recommended? Clarification on the intended meaning would be helpful.
+
+2. **Ambiguity in "use dictionary mapping or match-case for 4 to 20 conditions to replace if-elif":** It's unclear whether this guideline suggests using dictionary mapping and match-case exclusively for situations where there are 4 to 20 conditions, or if it's a general recommendation with specific emphasis on this range.
+
+3. **Ambiguity in "nesting functions":** Does this suggest that nesting functions is a preferred practice, or is it advising to look out for nested functions? The context is not clear.
+
+4. **Unclear guideline on "continue keyword in all loops when needed":** The phrase "when needed" is vague. Could you provide criteria or examples to clarify when the use of the 'continue' keyword is considered necessary?
+
+5. **Unclear instruction in "comment on illogical code lines":** It's ambiguous what constitutes an "illogical" code line. Are there specific criteria or examples that define illogical code lines?
+
+6. **Ambiguity in variable naming conventions:** The guideline strictly advises using "tmp" and "ret" for abbreviations in variable naming, but it's not clear if these are the only abbreviations allowed, or if they're just examples of acceptable abbreviations.
+
+7. **Ambiguity in "maximum of 3 indention levels at base level of the source file":** It's unclear what is meant by "base level of the source file." Does this refer to the top-most level of code outside of any class or function definitions, or does it apply to each function or class individually?
+
+8. **Ambiguity in "type hints naming convention in variable names":** This guideline lacks specificity. What exactly is the naming convention for type hints in variable names? 
+
+9. **Unclear guideline on "strictly no vary approach":** The term "vary approach" is not a standard term and is ambiguous. Could you explain what is meant by this?
+
+10. **Ambiguity in "chaining methods":** It's unclear whether this guideline advises against the practice of chaining methods altogether or if it suggests avoiding excessive or certain types of method chaining.
+
+11. **Vagueness in "all functions do what their names said":** While this seems straightforward, it might be helpful to define what constitutes a clear and descriptive function name.
+
+12. **Ambiguity in simplifying loops with listed functions:** It's unclear whether these functions are simply suggested as useful tools, or if there's a specific guideline on how to use them to simplify loops.
+
+Could you provide clarifications or additional context for these points to ensure a clear understanding of the guidelines?
 ```

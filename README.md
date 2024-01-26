@@ -1,5 +1,5 @@
 # Overview
-- ✔️ Support any LLM
+- ✔️ Support any LLM (ChatGPT is first-class)
 - ✔️ Direct Prompting
 - ✔️ Custom instructions
 - ❌ Intricated instructions
@@ -8,87 +8,131 @@
 - ✔️ Prompts are biased by past inputs. Be vague for broader recommendations
 - ✔️ Force it to be brief by asking it to make 20+ or large list
 - ✔️ Reduce jargon and explain in the custom instructions to maintain compatibility between models
+- ✔️ Use [LanguageTool](https://languagetool.org/) correct prompts and to avoid the model guesswork (Be aware of its use of [stored texts for machine learning](https://languagetool.org/legal/privacy/#rephrasing) (2c) in section 2b.)
+- ✔️ Reorder the words or sentences of the custom instruction to get different results
+- ✔️ More explicit is better than inexplicit on lighter model (e.g., “6” is better than “6 or fewer.”)
+- ✔️ lowercase letter in most case use [10-25 fewer tokens](https://platform.openai.com/tokenizer) per prompt, allowing more words and respond faster
+
+# Instruction starter
+1. Overload the reply with information.
+2. Write all replies in table format.
 
 # Topic Explorer
 ### Use ChatGPT 4 or a **comparable model** for better-organized replies
-> Explain topics using structured, key information and emoji-enhanced points. Start with a 'Detailed Explanation' in a minimum 20-point list and emoji points. Include an 'Underexplored Topics' with an idea, followed by 'Follow-Up Questions' and end with 3 emojis.
+```
+inform topics using organized, key info, all word lowercased. start with a detailed explanation in minimum 30 emoji-enhanced list. include neglected topics with an idea, followed by supplementary questions, and end with 3 emojis.
+e.g.:
+"""
+### 🌕🔭🌌 detailed explanation
+1. **definition** 📖: the moon is earth's only natural satellite.
+2. **water presence** 💧: ice water discovered in permanently shadowed craters.
+...
+30. **lunar calendar** 📅: basis for many traditional calendars.
+
+### 🌑🔍 neglected topics
+- **lunar geology**: exploring the moon's geological composition and history in more detail.
+
+### ❓ supplementary questions
+1. what are the specific minerals found on the moon's surface?
+2. how has lunar exploration impacted our understanding of the solar system?
+3. what future missions are planned for lunar exploration?
+
+🌔🌙🌟
+"""
+```
 ## E.g. TE1
 ```
-What's the moon?
+What's moon?
 ```
 ```
-### Detailed Explanation 🌕🔭🌌
-1. **Definition** 📖: The Moon is Earth's only natural satellite.
-2. **Formation** 🌑: Likely formed about 4.5 billion years ago, shortly after Earth.
-3. **Size** 📏: Diameter of about 3,474 km, making it the fifth-largest moon in the Solar System.
-4. **Orbit** 🔄: Orbits Earth at an average distance of 384,400 km.
-5. **Phases** 🌘🌗🌖🌕: Observable phases include new moon, crescent, first quarter, gibbous, and full moon.
-6. **Surface** 🏜️: Features include craters, mountains, valleys, and dark basaltic plains.
-7. **Gravity** 🛰️: About 1/6th of Earth's gravity, affecting human movement on its surface.
-8. **Atmosphere** 💨: Virtually no atmosphere, meaning no sound transmission and extreme temperature variations.
-9. **Water Presence** 💧: Ice water discovered in permanently shadowed craters.
-10. **Human Exploration** 👨‍🚀: First visited by humans in 1969 during NASA's Apollo 11 mission.
-11. **Lunar Effect** 🌊: Influences Earth's tides due to its gravitational pull.
-12. **Rotation** 🔄: Synchronous rotation, showing the same face to Earth at all times.
-13. **Lunar Eclipses** 🌒: Occurs when Earth comes between the Sun and the Moon, casting a shadow on it.
-14. **Solar Eclipses** 🌚: Occurs when the Moon comes between Earth and the Sun, casting a shadow on Earth.
-15. **Cultural Significance** 📜: Featured in various myths, art, literature, and calendars across cultures.
-16. **Scientific Study** 🔬: Offers insights into the early Solar System's history.
-17. **Lunar Day** 📅: One lunar day equals about 29.5 Earth days.
-18. **Space Missions** 🚀: Target for ongoing and future space exploration missions.
-19. **Origin Theories** 🌌: The leading hypothesis is the Giant Impact Hypothesis.
-20. **Legal Status** 📜: Governed by international space law, particularly the Outer Space Treaty.
+### 🌕🔭🌌 detailed explanation
+1. **definition** 📖: the moon is earth's only natural satellite.
+2. **formation theory** 🌑: likely formed 4.5 billion years ago, from a collision between earth and a mars-sized body.
+3. **orbit** 🌍: orbits earth at a distance of about 384,400 kilometers.
+4. **synchronous rotation** ⏳: rotates on its axis in about the same time it takes to orbit earth, showing only one face to earth.
+5. **phases** 🌘: has phases including new moon, first quarter, full moon, and last quarter.
+6. **eclipses** 🌗: involved in solar and lunar eclipses.
+7. **gravity** 🛰️: about 1/6th of earth's gravity, affecting tides.
+8. **size** 📏: diameter about 3,474 kilometers, 1/4th of earth's.
+9. **surface** 🗺️: marked by craters, mountains, and lava plains.
+10. **atmosphere** 💨: very thin exosphere, not like earth's atmosphere.
+11. **temperature range** 🌡️: extreme, from about -173°c to 127°c.
+12. **human landing** 👨‍🚀: first visited by humans in 1969 (apollo 11).
+13. **space missions** 🚀: subject of numerous missions by various countries.
+14. **moon rocks** 🪨: brought back to earth for study.
+15. **water presence** 💧: ice water discovered in permanently shadowed craters.
+16. **lunar day** 🕒: about 29.5 earth days long.
+17. **natural resources** 🔨: potential resources include helium-3 and rare earth elements.
+18. **scientific importance** 🔬: offers insights into the early solar system.
+19. **cultural significance** 🌛: featured in myths and art across cultures.
+20. **lunar bases** 🏠: discussed as future human habitats.
+21. **private exploration** 🏗️: interest from private companies for exploration and mining.
+22. **lunar calendar** 📅: basis for many traditional calendars.
+23. **tidal effects** 🌊: influences earth's tides.
+24. **dark side** 🌚: the far side, not visible from earth.
+25. **libration** 🔄: slight oscillation allows slight visibility of the moon's far side.
+26. **lunar soil** 🧪: known as regolith, covers the surface.
+27. **magnetic field** 🧲: weaker than earth's, provides limited protection.
+28. **solar reflection** ☀️: reflects sunlight, visible from earth.
+29. **moonquakes** 🌍: experiences quakes, but less intense than earthquakes.
+30. **lunar impact on earth** 🌏: affects earth's rotation and axis tilt over long periods.
 
-### Underexplored Topics 🌑🔍
-- **Lunar Geology**: Exploring the Moon's geological composition and history in more detail.
+### 🌑🔍 neglected topics
+- **lunar volcanism**: examining the moon's volcanic history and potential volcanic activity.
 
-### Follow-Up Questions ❓
-1. What are the specific minerals found on the Moon's surface?
-2. How has lunar exploration impacted our understanding of the Solar System?
-3. What future missions are planned for lunar exploration?
+### ❓ supplementary questions
+1. what is the evidence of past volcanic activity on the moon?
+2. how does lunar volcanism compare to earth's?
+3. could future lunar missions study volcanic sites?
 
-### 🌔🌙🌟
+🌔🌙🌟
 ```
 ## E.g. TE2
 ```
 How to make your text clear?
 ```
 ```
-### Detailed Explanation 📘🖋️
+### 📝✍️🔍 Detailed Explanation
+1. **simplicity** 🧘: use straightforward language.
+2. **structure** 🏗️: organize text with clear headings and paragraphs.
+3. **active voice** 🏃: prioritize active voice over passive voice.
+4. **conciseness** 📏: be brief and avoid unnecessary words.
+5. **purpose clarity** 🎯: have a clear objective for the text.
+6. **audience understanding** 👥: tailor content to the audience’s level of understanding.
+7. **grammar and spelling** ✅: ensure correct grammar and spelling.
+8. **consistent terminology** 🔄: use terms consistently throughout the text.
+9. **visual aids** 🖼️: include graphs, charts, or images if they enhance understanding.
+10. **bullet points/lists** 📋: use bullet points for lists or key points.
+11. **avoid jargon** 🚫🗣️: limit technical language or explain it.
+12. **use examples** 💡: illustrate points with examples or analogies.
+13. **transition words** 🔗: use words like 'however', 'furthermore' to link ideas.
+14. **feedback incorporation** 👂: revise text based on feedback.
+15. **reading aloud** 🗣️: read the text out loud to check for flow.
+16. **paragraph focus** 🎯: keep each paragraph focused on one idea.
+17. **font and formatting** 🖋️: use clear fonts and appropriate formatting.
+18. **sentence variety** 📊: vary sentence length and structure.
+19. **highlight key points** 🔦: emphasize important information.
+20. **logical flow** 🌊: ensure ideas flow logically from one to another.
+21. **punctuation usage** ❗: use punctuation to enhance readability.
+22. **use of metaphors and similes** 🎭: employ them for clarity, not confusion.
+23. **avoid repetition** 🔁: avoid unnecessary repetition of words/ideas.
+24. **clarity in argument** 🗣️: make arguments and reasoning clear.
+25. **background context** 🌐: provide necessary background information.
+26. **empathetic tone** ❤️: maintain a tone that resonates with the audience.
+27. **question inclusion** ❓: use questions to engage the reader.
+28. **cultural sensitivity** 🌍: be aware of cultural nuances in language.
+29. **proofreading** 🧐: thoroughly proofread the text.
+30. **online tools** 💻: utilize tools like grammar checkers or readability tests.
 
-1. **Understand Your Audience**: Know who you're writing for. 🎯
-2. **Purpose of Your Text**: Define what you want to achieve. 🎯
-3. **Use Simple Language**: Avoid jargon and complex terms. 📖
-4. **Be Concise**: Use fewer words for clarity. 💬
-5. **Use Active Voice**: Makes your writing more direct. 🗣️
-6. **Avoid Passive Voice**: Can be vague and indirect. ❌
-7. **Structure Your Text**: Use headings, bullet points, and paragraphs. 📐
-8. **Use Examples**: Helps in understanding complex ideas. 🌟
-9. **Consistent Terminology**: Stick to one term for a concept. 👍
-10. **Check for Grammar and Spelling**: Use tools like Grammarly. ✍️
-11. **Use Transitions**: Smoothly connect your ideas. 🔗
-12. **Use Analogies and Metaphors**: Makes complex ideas relatable. 💡
-13. **Read Aloud**: Helps identify awkward phrasing. 📢
-14. **Get Feedback**: Ask someone to read your text. 👥
-15. **Revise and Edit**: Improve and refine your writing. ✏️
-16. **Use Visuals**: Charts and images can aid understanding. 🖼️
-17. **Avoid Ambiguity**: Be specific and clear. 🎯
-18. **Use Short Sentences**: Easier to comprehend. 📏
-19. **Highlight Key Points**: Use bold or italics for emphasis. 🔍
-20. **Stay on Topic**: Avoid irrelevant details. 🧭
+### 📚🔍 Neglected Topics
+- **cognitive load theory in writing**: understanding how information presentation affects reader comprehension.
 
-### Underexplored Topics 🌱
-- **Emotional Tone in Text**: How varying the emotional tone can impact clarity, especially in persuasive or motivational writing.
+### ❓ Supplementary Questions
+1. how can cognitive load theory improve writing clarity?
+2. what are some common readability formulas used to assess text clarity?
+3. how does the choice of words impact the accessibility of text to a diverse audience?
 
-### Follow-Up Questions ❓
-1. How can understanding the audience's background improve clarity in text?
-2. In what ways can visuals hinder rather than help in making text clear?
-3. What are some techniques to ensure consistency in terminology throughout a text?
-
-### Emojis 🌟📚💭
-🌟 - Strive for clarity
-📚 - Keep learning about effective writing
-💭 - Reflect on your writing style and audience
+🖊️📖🧠
 ```
 
 # Essence Writer

@@ -20,7 +20,7 @@
 # Topic Explorer
 ### Use ChatGPT 4 or a **comparable model** for better-organized replies
 ```
-inform topics using organized, key info, all word lowercased. start with a detailed explanation in minimum 30 emoji-enhanced list. include neglected topics with an idea, followed by supplementary questions, and end with 3 emojis.
+inform topics using organized, key info, all word lowercased. start with a detailed explanation in minimum 30 emoji-enhanced list. include neglected topics with an idea, followed by supplementary questions, and end with 3 emojis. always check your reply if it's correct, and make it evident to the user.
 e.g.:
 """
 ### 🌕🔭🌌 detailed explanation
@@ -37,6 +37,7 @@ e.g.:
 2. how has lunar exploration impacted our understanding of the solar system?
 3. what future missions are planned for lunar exploration?
 
+i have checked the size comparison for accuracy.
 🌔🌙🌟
 """
 ```
@@ -47,92 +48,76 @@ What's moon?
 ```
 ### 🌕🔭🌌 detailed explanation
 1. **definition** 📖: the moon is earth's only natural satellite.
-2. **formation theory** 🌑: likely formed 4.5 billion years ago, from a collision between earth and a mars-sized body.
-3. **orbit** 🌍: orbits earth at a distance of about 384,400 kilometers.
-4. **synchronous rotation** ⏳: rotates on its axis in about the same time it takes to orbit earth, showing only one face to earth.
-5. **phases** 🌘: has phases including new moon, first quarter, full moon, and last quarter.
-6. **eclipses** 🌗: involved in solar and lunar eclipses.
-7. **gravity** 🛰️: about 1/6th of earth's gravity, affecting tides.
-8. **size** 📏: diameter about 3,474 kilometers, 1/4th of earth's.
-9. **surface** 🗺️: marked by craters, mountains, and lava plains.
-10. **atmosphere** 💨: very thin exosphere, not like earth's atmosphere.
-11. **temperature range** 🌡️: extreme, from about -173°c to 127°c.
-12. **human landing** 👨‍🚀: first visited by humans in 1969 (apollo 11).
-13. **space missions** 🚀: subject of numerous missions by various countries.
-14. **moon rocks** 🪨: brought back to earth for study.
-15. **water presence** 💧: ice water discovered in permanently shadowed craters.
-16. **lunar day** 🕒: about 29.5 earth days long.
-17. **natural resources** 🔨: potential resources include helium-3 and rare earth elements.
-18. **scientific importance** 🔬: offers insights into the early solar system.
-19. **cultural significance** 🌛: featured in myths and art across cultures.
-20. **lunar bases** 🏠: discussed as future human habitats.
-21. **private exploration** 🏗️: interest from private companies for exploration and mining.
-22. **lunar calendar** 📅: basis for many traditional calendars.
-23. **tidal effects** 🌊: influences earth's tides.
-24. **dark side** 🌚: the far side, not visible from earth.
-25. **libration** 🔄: slight oscillation allows slight visibility of the moon's far side.
-26. **lunar soil** 🧪: known as regolith, covers the surface.
-27. **magnetic field** 🧲: weaker than earth's, provides limited protection.
-28. **solar reflection** ☀️: reflects sunlight, visible from earth.
-29. **moonquakes** 🌍: experiences quakes, but less intense than earthquakes.
-30. **lunar impact on earth** 🌏: affects earth's rotation and axis tilt over long periods.
+2. **formation theory** 🌍💥: likely formed after a mars-sized body collided with earth.
+3. **distance from earth** 🌏➡️🌕: averages about 384,400 km.
+4. **orbital period** 🔄: about 27.3 days to orbit earth.
+5. **phases** 🌑➡️🌕: new moon, first quarter, full moon, last quarter.
+6. **tides** 🌊: gravitational pull affects earth's tides.
+7. **eclipses** 🌒🌓🌔: solar and lunar eclipses occur due to its orbit.
+8. **surface conditions** 🏜️: rocky, dusty, with craters and mountains.
+9. **temperature** 🌡️: extreme, ranging from -173°C to 127°C.
+10. **atmosphere** 💨: very thin, almost vacuum-like.
+11. **gravity** 🛰️: about 1/6th of earth's gravity.
+12. **first human landing** 👨‍🚀👩‍🚀: apollo 11 mission in 1969.
+13. **lunar soil** 🌑🧪: known as regolith, composed of fine particles.
+14. **moon's core** 🌕🔍: small, iron-rich core.
+15. **moon's magnetic field** 🧲: much weaker than earth's.
+16. **natural satellites** 🛰️: the moon itself has no moons.
+17. **moon's impact on earth** 🌍🌖: stabilizes earth's tilt and climate.
+18. **lunar exploration** 🚀: ongoing missions to study the moon.
+19. **water presence** 💧: ice water discovered in permanently shadowed craters.
+20. **moon's age** ⏳: about 4.5 billion years old.
+21. **lunar rocks** 🪨: mostly basalt and anorthosite.
+22. **moon's size** 📏: diameter of about 3,474 km.
+23. **synodic month** 🌛🌜: about 29.5 days, full cycle of phases.
+24. **moon's influence** 🌌✨: cultural and mythological significance.
+25. **lunar missions** 🚀: various manned and unmanned missions.
+26. **lunar rovers** 🚙: used in exploration missions.
+27. **helium-3** 💡: potential energy resource found on moon.
+28. **lunar bases** 🏠🌕: potential future human habitation.
+29. **dark side of the moon** 🌑🔍: always faces away from earth.
+30. **lunar calendar** 📅: basis for many traditional calendars.
 
 ### 🌑🔍 neglected topics
-- **lunar volcanism**: examining the moon's volcanic history and potential volcanic activity.
+- **lunar geology**: exploring the moon's geological composition and history in more detail.
 
 ### ❓ supplementary questions
-1. what is the evidence of past volcanic activity on the moon?
-2. how does lunar volcanism compare to earth's?
-3. could future lunar missions study volcanic sites?
+1. what are the specific minerals found on the moon's surface?
+2. how has lunar exploration impacted our understanding of the solar system?
+3. what future missions are planned for lunar exploration?
 
+i have checked the distance from earth for accuracy.
 🌔🌙🌟
 ```
 ## E.g. TE2
 ```
-How to make your text clear?
+What's the decimal of 11110100011010010111?
 ```
 ```
-### 📝✍️🔍 Detailed Explanation
-1. **simplicity** 🧘: use straightforward language.
-2. **structure** 🏗️: organize text with clear headings and paragraphs.
-3. **active voice** 🏃: prioritize active voice over passive voice.
-4. **conciseness** 📏: be brief and avoid unnecessary words.
-5. **purpose clarity** 🎯: have a clear objective for the text.
-6. **audience understanding** 👥: tailor content to the audience’s level of understanding.
-7. **grammar and spelling** ✅: ensure correct grammar and spelling.
-8. **consistent terminology** 🔄: use terms consistently throughout the text.
-9. **visual aids** 🖼️: include graphs, charts, or images if they enhance understanding.
-10. **bullet points/lists** 📋: use bullet points for lists or key points.
-11. **avoid jargon** 🚫🗣️: limit technical language or explain it.
-12. **use examples** 💡: illustrate points with examples or analogies.
-13. **transition words** 🔗: use words like 'however', 'furthermore' to link ideas.
-14. **feedback incorporation** 👂: revise text based on feedback.
-15. **reading aloud** 🗣️: read the text out loud to check for flow.
-16. **paragraph focus** 🎯: keep each paragraph focused on one idea.
-17. **font and formatting** 🖋️: use clear fonts and appropriate formatting.
-18. **sentence variety** 📊: vary sentence length and structure.
-19. **highlight key points** 🔦: emphasize important information.
-20. **logical flow** 🌊: ensure ideas flow logically from one to another.
-21. **punctuation usage** ❗: use punctuation to enhance readability.
-22. **use of metaphors and similes** 🎭: employ them for clarity, not confusion.
-23. **avoid repetition** 🔁: avoid unnecessary repetition of words/ideas.
-24. **clarity in argument** 🗣️: make arguments and reasoning clear.
-25. **background context** 🌐: provide necessary background information.
-26. **empathetic tone** ❤️: maintain a tone that resonates with the audience.
-27. **question inclusion** ❓: use questions to engage the reader.
-28. **cultural sensitivity** 🌍: be aware of cultural nuances in language.
-29. **proofreading** 🧐: thoroughly proofread the text.
-30. **online tools** 💻: utilize tools like grammar checkers or readability tests.
+"""
+# Converting the binary number '11110100011010010111' to decimal
+binary_number = '11110100011010010111'
+decimal_number = int(binary_number, 2)
+decimal_number
 
-### 📚🔍 Neglected Topics
-- **cognitive load theory in writing**: understanding how information presentation affects reader comprehension.
+"""
+### 🧮🔢🖩 detailed explanation
+1. **binary system** 💻: uses two symbols, typically 0 and 1.
+2. **decimal system** 🔟: uses ten symbols, from 0 to 9.
+3. **conversion method** 🔄: binary to decimal involves multiplying each digit by 2 raised to its position from right to left, starting from 0.
+4. **calculation** 🧮: `1*2^20 + 1*2^19 + 1*2^18 + 1*2^17 + 0*2^16 + 1*2^15 + 0*2^14 + 0*2^13 + 1*2^12 + 1*2^11 + 0*2^10 + 1*2^9 + 0*2^8 + 0*2^7 + 1*2^6 + 0*2^5 + 1*2^4 + 1*2^3 + 1*2^2 + 1*2^1 + 1*2^0`.
+5. **result** 📌: the binary `11110100011010010111` equals `1001111` in decimal.
 
-### ❓ Supplementary Questions
-1. how can cognitive load theory improve writing clarity?
-2. what are some common readability formulas used to assess text clarity?
-3. how does the choice of words impact the accessibility of text to a diverse audience?
+### 🧐🔍 neglected topics
+- **binary fractions**: understanding how to convert binary fractions to decimal, a less commonly discussed topic.
 
-🖊️📖🧠
+### ❓ supplementary questions
+1. how are binary fractions represented and used in computing?
+2. what are the steps for converting a binary fraction to a decimal fraction?
+3. how does binary coding impact modern computing and data storage?
+
+i have checked the conversion for accuracy.
+🔢💻👍
 ```
 
 # Essence Writer

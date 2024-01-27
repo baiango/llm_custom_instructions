@@ -3,45 +3,78 @@
 - ✔️ Direct Prompting
 - ✔️ Custom instructions
 - ❌ Intricated instructions
+- ✔️ Support mistralai/Mixtral-8x7B-Instruct-v0.1 at [HuggingChat](https://huggingface.co/chat)
 
-# Tricks
+# Tricks for ChatGPT
+<details><summary>Tricks</summary>
+
 - ✔️ Prompts are biased by past inputs. Be vague for broader recommendations
 - ✔️ Force it to be brief by asking it to make 20+ or large list
 - ✔️ Reduce jargon and explain in the custom instructions to maintain compatibility between models
 - ✔️ Use [LanguageTool](https://languagetool.org/) correct prompts and to avoid the model guesswork (Be aware of its use of [stored texts for machine learning](https://languagetool.org/legal/privacy/#rephrasing) (2c) in section 2b.)
 - ✔️ Reorder the words or sentences of the custom instruction to get different results
-- ✔️ More explicit is better than inexplicit on lighter model (e.g., “6” is better than “6 or fewer.”)
-- ✔️ lowercase letter in most case use [10-25 fewer tokens](https://platform.openai.com/tokenizer) per prompt, allowing more words and respond faster
+- ✔️ More explicit is better than inexplicit on ***lighter model*** (e.g., “6” is better than “6 or fewer.”)
+- ✔️ lowercase letter in most case use [10-25 fewer tokens](https://platform.openai.com/tokenizer) per prompt, allowing slight more words and respond faster
+- ✔️ Emoji cost 2-3 (mostly 3) tokens. Remove it if you don't need
+- ✔️ Keep ChatGPT 4's replies up to 1000 tokens to save messages (It will avoid more than 1000 tokens.)
+- ✔️ Make ChatGPT always disagree with you to be critical
+- ✔️ **LLM only improves via its knowledge, not obscure**
+- ✔️ Narrow your instructions, create different ones, and use them separately
+</details>
 
-# Instruction starter
+# Prompt starter
+<details><summary>Prompt starter</summary>
+
 1. Overload the reply with information.
 2. Write all replies in table format.
+3. Give me real-world example.
+4. Crafting prompt (Use it with Topic Explorer)
+	- How to make the best prompt for ChatGPT?
+	- What kind of task should I assign to ChatGPT?
+	- What background should I put in ChatGPT instruction? (Not recommend as it bring out bias by specifying audience)
+	- What's your rich and inline formatting and code blocks options?
+	- List tones to use in ChatGPT.
+</details>
+
+# Debugging prompt
+<details><summary>Debugging prompt</summary>
+
+1. Breakdown this format from what you understand. Is it coherent for LLMs?
+2. How would you write [engaging opening] for prompt ["How to make your text engaging for readers?"]
+3. How would you define [minimal characters]?
+</details>
 
 # Topic Explorer
 ### Use ChatGPT 4 or a **comparable model** for better-organized replies
+<details><summary>TE Custom instruction</summary>
+
 ```
-inform topics using organized, key info, all word lowercased. start with a detailed explanation in minimum 30 emoji-enhanced list. include neglected topics with an idea, followed by supplementary questions, and end with 3 emojis. always check your reply if it's correct, and make it evident to the user.
-e.g.:
+all word lowercased. inform fitting topics using organized, minimal characters. start with a detailed explanation in minimum 45 emoji-enhanced list. include neglected topics with an idea, followed by supplementary questions, and end with 3 emojis. always gives step-by-step or check your reply.
+e.g. format:
 """
 ### 🌕🔭🌌 detailed explanation
-1. **definition** 📖: the moon is earth's only natural satellite.
-2. **water presence** 💧: ice water discovered in permanently shadowed craters.
+1. **...** 📖: ...
+2. **...** 💧: ...
 ...
-30. **lunar calendar** 📅: basis for many traditional calendars.
+45. **...** 📅: ...
 
 ### 🌑🔍 neglected topics
-- **lunar geology**: exploring the moon's geological composition and history in more detail.
+- **...**: ...
 
 ### ❓ supplementary questions
-1. what are the specific minerals found on the moon's surface?
-2. how has lunar exploration impacted our understanding of the solar system?
-3. what future missions are planned for lunar exploration?
+1. ...
+2. ...
+3. ...
 
-i have checked the size comparison for accuracy.
 🌔🌙🌟
 """
 ```
-## E.g. TE1
+</details>
+
+
+
+<details><summary>E.g. TE1</summary>
+
 ```
 What's moon?
 ```
@@ -89,7 +122,12 @@ What's moon?
 i have checked the distance from earth for accuracy.
 🌔🌙🌟
 ```
-## E.g. TE2
+</details>
+
+
+
+<details><summary>E.g. TE2</summary>
+
 ```
 What's the decimal of 11110100011010010111?
 ```
@@ -119,11 +157,20 @@ decimal_number
 i have checked the conversion for accuracy.
 🔢💻👍
 ```
+</details>
+
+
 
 # Essence Writer
 ### ChatGPT 4 or a **similar model** is suggested for superior English vocabulary usage and adherence to instructions.
+<details><summary>EW Custom instruction</summary>
+
 > All compared. 'Approx.': original text, minor edits. 'Accurate': shorter, key info. 'Loose': essence only. 'Least': 6 or fewer words. Clear, precise, and original tone.
-## E.g. EW1
+</details>
+
+
+<details><summary>E.g. EW1</summary>
+
 ```
 I went to the most delicious restaurant last night, and I had the most delicious meal ever! The appetizer was delicious. The main course was also delicious. Even the dessert was delicious! The restaurant had a delicious ambiance. The service was incredibly delicious too. I couldn't stop raving. Everything was so delicious. I can't wait to go back and savor their delicious dishes again!
 ```
@@ -136,7 +183,12 @@ I went to the most delicious restaurant last night, and I had the most delicious
 
 **Least**: Exceptional restaurant experience.
 ```
-## E.g. EW2
+</details>
+
+
+
+<details><summary>E.g. EW2</summary>
+
 ```
 To effectively enhance the readability and comprehensibility of your text, it's quintessentially imperative to adhere to a plethora of meticulously curated strategies, each woven into the fabric of linguistic presentation with the utmost care and attention to detail. Firstly, one must embark on the journey of utilizing clear and concise language, however, it's often beneficial to intersperse one's writing with a smattering of complex and grandiloquent terms, thereby adding a certain je ne sais quoi to the overall narrative, which, in turn, serves to not only elevate the prose but to imbue it with a certain verisimilitude that might otherwise be lacking in more straightforward, pedestrian writing. Furthermore, the structuring of sentences should be done in such a way as to maximize clarity, yet, paradoxically, employing convoluted sentence structures and a plethora of clauses can add a delightful complexity to the text, making it a veritable tapestry of linguistic prowess. Additionally, the paragraph should ideally be cohesive and maintain a focused theme, although, diverging into tangentially related subtopics and anecdotal meanderings can enrich the narrative, providing a kaleidoscopic array of perspectives and insights that, while potentially diverting from the main point, contribute to a richer, more layered understanding of the subject matter at hand.
 ```
@@ -149,10 +201,18 @@ To effectively enhance the readability and comprehensibility of your text, it's 
 
 **Least**: Clear, complex language; balanced sentences; focused, rich paragraphs.
 ```
+</details>
+
+
+
 # Code Stylist
 ### It is recommended to use ChatGPT 4 or an **equivalent model** for handling complex programming languages.
+<details><summary>CS Custom instruction</summary>
+
 > Formats code in three styles: simple, elegant, and clever, providing three code versions with no extra talk.
-## E.g. CS1
+</details>
+<details><summary>E.g. CS1</summary>
+
 **User:**
 ```py
 def calculate_depth(if_positions, b_start, b_end):
@@ -185,11 +245,18 @@ def calculate_depth(if_positions, b_start, b_end):
 def calculate_depth(if_positions, b_start, b_end):
 	return sum((a_start < b_start < b_end < a_end) and ((a_end - a_start) > (b_end - b_start)) for a_start, a_end, _ in if_positions)
 ```
+</details>
+
+
 
 # Ambiguity Detector
 ### Urged to regenerate 5+ to catch all ambiguities
+<details><summary>AD custom instruction</summary>
+
 > List ambiguities—semantic, syntactic, lexical, and narrative—without interpreting. Ask for user explanations with curiosity.
-## E.g. AD1
+</details>
+<details><summary>E.g. AD1</summary>
+
 ```
 In order to, you know, get to the, like, really important stuff, I, uh, just wanted to, um, basically say that, well, I think, um, we should, like, definitely, you know, try to, uh, avoid using, you know, too many, like, filler words, because, you see, it, like, makes our, um, writing, well, kind of, you know, less clear and, um, more difficult to, you know, understand.
 ```
@@ -202,7 +269,12 @@ Your message contains several instances of ambiguity:
 
 Could you clarify your main message without the filler words for better understanding?
 ```
-## E.g. AD2
+</details>
+
+
+
+<details><summary>E.g. AD2</summary>
+
 ```
 """
 # Guidelines for programming best practices in Python syntax. These guidelines are allowed unless strictly stated.
@@ -262,8 +334,14 @@ Your text on Python programming best practices contains several ambiguities that
 
 Could you please provide more details or examples for these points?
 ```
+</details>
+
+
+
 # A2 Grammar News
 ### This requires an **advance model** in order to be functional
+<details><summary>A2GN custom instruction</summary>
+
 ```
 Pick one topic and then pick a topic and write a news article as if BBC with all featured grammar rules.
 
@@ -293,7 +371,12 @@ morning rituals, work, personal grooming, meals, home maintenance, shopping, exe
 News Topics:
 government policies, financial markets, global conflicts, technological and medical advancements, climate change, education, sports, celebrity news, science, corporate affairs, legal issues, community events, travel, lifestyle, weather, personal stories, arts and literature, social movements, and emerging tech like AI.
 ```
-## E.g. A2GN1
+</details>
+
+
+
+<details><summary>E.g. A2GN1</summary>
+
 ```
 
 ```
@@ -338,9 +421,20 @@ Environmental concerns are also a part of this resurgence, with a growing emphas
 
 As the world becomes increasingly digitized, the simple act of preparing and enjoying a cup of tea in the traditional way offers a much-needed connection to the past and a moment of peace in the present. The tea ceremony's growing popularity is a testament to the timeless human desire for connection, culture, and tranquility in our day-to-day lives.
 ```
+</details>
+
+
+
 # Imagine Easy
+<details><summary>IE custom instruction</summary>
+
 > Simplify topics, using easy-to-visualize language with fewer syllables. It must use clear, vivid examples for better understanding. End with 7 follow-up questions.
-## E.g. IE1
+</details>
+
+
+
+<details><summary>E.g. IE1</summary>
+
 ```
 Is there anything better than fractal compression in size?
 ```
@@ -381,3 +475,4 @@ Time for some more fun questions:
 6. What could be a fun way to explain compression to a friend?
 7. How do you think picture shrinking will evolve in the future?
 ```
+</details>

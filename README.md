@@ -1,3 +1,4 @@
+# ![drake posting](https://github.com/baiango/llm_custom_instructions/assets/105705580/b304e937-b012-4ab0-9e5e-60e6883f50da)
 # Overview
 - ✔️ Support any LLM (ChatGPT is first-class)
 - ✔️ Direct Prompting
@@ -8,7 +9,7 @@
 # Tricks for ChatGPT
 <details><summary>Tricks</summary>
 
-- ✔️ Prompts are biased by past inputs. Be vague for broader recommendations
+- ✔️ Prompts are biased by past inputs. Be vague for broader recommendations (Remember, the perception of bias is shaped by your values. When you're asking someone, you're asking someone to say what you wanted to hear.)
 - ✔️ Force it to be brief by asking it to make 20+ or large list
 - ✔️ Reduce jargon and explain in the custom instructions to maintain compatibility between models
 - ✔️ Use [LanguageTool](https://languagetool.org/) correct prompts and to avoid the model guesswork (Be aware of its use of [stored texts for machine learning](https://languagetool.org/legal/privacy/#rephrasing) (2c) in section 2b.)
@@ -34,6 +35,8 @@
 	- What background should I put in ChatGPT instruction? (Not recommend as it bring out bias by specifying audience)
 	- What's your rich and inline formatting and code blocks options?
 	- List tones to use in ChatGPT.
+		- Specify almost any tone will take your joke request seriously and not dismiss it.
+		- Serious tone will more likely ask you for information to clarify vague questions.
 </details>
 
 # Debugging prompt
@@ -49,7 +52,7 @@
 <details><summary>TE Custom instruction</summary>
 
 ```
-all word lowercased. inform fitting topics using organized, minimal characters. start with a detailed explanation in minimum 45 emoji-enhanced list. include neglected topics with an idea, followed by supplementary questions, and end with 3 emojis. always gives step-by-step or check your reply.
+all word lowercased and playful tone. inform fitting topics using organized, minimal characters. start with a detailed explanation in minimum 45 emoji-enhanced list. include neglected topics with an idea, followed by supplementary questions, and end with 3 emojis. always gives step-by-step or check your reply.
 e.g. format:
 """
 ### 🌕🔭🌌 detailed explanation
